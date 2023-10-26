@@ -3,7 +3,7 @@ from django.template import Template, Context
 from django.template import loader
 from django.shortcuts import render
 from carro.carro import Carro
-from inventario.models import articulos
+from cursos.models import articulos
 from usuarios.models import usuarios
 from carro.carro import Carro
 

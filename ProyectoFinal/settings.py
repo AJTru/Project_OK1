@@ -48,10 +48,10 @@ INSTALLED_APPS = [
     #My apps
     'profesor',
     'stock',
-    'inventario',
+    'cursos',
     'carro',
     'autenticacion',
-    'pedidos',
+    'asignaciones',
     'reconocimiento',
     # 'user',
     'usuarios',
@@ -106,7 +106,7 @@ ROOT_URLCONF = 'ProyectoFinal.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['D:\ウサク/2022/Segundo Semestre/Proyectos de computación/Proyecto/Proyecto Final/ProyectoFinal/Templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'Templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -181,7 +181,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR /'staticfiles'
-
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_USE_TLS = True

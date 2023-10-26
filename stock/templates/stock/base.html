@@ -19,7 +19,7 @@
 	<!-- Site Title -->
 	{% if request.path == '/'%}
 	<title>Music Academy</title>
-	{% elif request.path == '/inventario/'%}
+	{% elif request.path == '/cursos/'%}
 	<title>Music Academy - Catalogo</title>
 	{% elif request.path == '/carrito'%}
 	<title>Music Academy - Asignación</title>
@@ -88,7 +88,7 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false" style="color: #04013f">Cursos</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item {% if request.path == '/inventario/' %}active{% endif %}"><a class="nav-link" href="{% url 'Catalogo' %}"style="color: #04013f">Catálogo</a></li>
+									<li class="nav-item {% if request.path == '/cursos/' %}active{% endif %}"><a class="nav-link" href="{% url 'Catalogo' %}"style="color: #04013f">Catálogo</a></li>
 									<!--<li class="nav-item"><a class="nav-link" href="ProductDetailsPages/ProductDetails1.html">Detalles de Producto</a></li>-->
 									<!--<li class="nav-item"><a class="nav-link" href="checkout.html">Confirmar Producto</a></li>-->
 									<li class="nav-item {% if request.path == '/carrito' %}active{% endif %}"><a class="nav-link" href="{% url 'Carrito'%}"style="color: #04013f">Asignación</a></li>

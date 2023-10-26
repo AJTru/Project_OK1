@@ -40,7 +40,7 @@ def vista_camara(request):
     return render(request, 'reconocimiento/reconocimiento.html')
 
 def vista_finalizar_reconocimiento(request):
-    return render(request, "inventario/catalogo.html")
+    return render(request, "cursos/catalogo.html")
 
 class VideoCamara(object):
     def __init__(self):

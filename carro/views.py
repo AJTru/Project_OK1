@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .carro import Carro
 
-from inventario.models import articulos
+from cursos.models import articulos
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 

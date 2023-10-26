@@ -120,7 +120,7 @@
 												<td>
 													{% for pedidos_comprados in pedidos_comprados %}
 														{% if pedidos_comprados.id == articulos_comprados.pedido_id %}
-															{% if pedidos_comprados.entregado is True %}
+															{% if pedidos_comprados.aprobado is True %}
 																<h5>Aprobado</h5>
 															{% else %}
 																<h5>Sin aprobar</h5>
