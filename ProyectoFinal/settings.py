@@ -15,6 +15,7 @@ import os
 
 from django.contrib.messages import constants as mensajes_de_error
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -141,17 +142,23 @@ DATABASES = {
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
+    # {
+    #     'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+    # },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+    # {
+    #     'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+    # },
+    # {
+    #     'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    # },
+    {   'NAME': 'ProyectoFinal.validators.UppercaseValidator', 
     },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    {   'NAME': 'ProyectoFinal.validators.DigitValidator', 
+    },
+    {   'NAME': 'ProyectoFinal.validators.SymbolValidator', 
     },
 ]
 
